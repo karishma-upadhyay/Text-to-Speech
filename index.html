@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech converter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Your CSS code here */
+        html {
+            height: 100%;
+            /* max-height: 600px; */
+            width: 1000px;
+            background-color: hsla(200,40%,30%,.4);
+            background-size: 
+                2500px,
+                800px,
+                500px 200px,
+                1000px,
+                400px 260px;
+            animation: 50s para infinite linear;
+        }
+
+        @keyframes para {
+            100% {
+                background-position: 
+                    -5000px 20%,
+                    -800px 95%,
+                    500px 50%,
+                    1000px 100%,
+                    400px 0;
+            }
+        }
+    </style>       
+</head>
+<body>
+    <div class="hero">
+        <h1>Text to Speech <span>Converter</span></h1>
+        <!--it is used to place the pull down box which is used to display the list of options-->
+        <textarea placeholder="Write anything here........."></textarea>
+        <div class="row">
+            <select></select>
+            <button><img src="images/play.png">Listen</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
